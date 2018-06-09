@@ -52,6 +52,13 @@ public class TriangleTest {
         Assert.assertFalse(triangle.isAvailable());
     }
 
+    @Test
+    public void test_2_2_2(){
+
+        Triangle triangle = new Triangle(2,2,2);
+        // assert
+        Assert.assertTrue(triangle.isAvailable());
+    }
 
 
 }
