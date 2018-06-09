@@ -12,7 +12,17 @@ public class Triangle {
     }
 
     public boolean isAvailable() {
-        return false;
+
+        boolean result = true;
+        if((Ea == 0)||(Eb == 0)||(Ec == 0)) {
+            return false;
+        }
+
+        if((Ea == 1)||(Eb == 1)||(Ec == 1)){
+            return true;
+        }
+
+        return result;
     }
 
 }
