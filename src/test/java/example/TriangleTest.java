@@ -12,4 +12,12 @@ public class TriangleTest {
         Assert.assertFalse(triangle.isAvailable());
     }
 
+    @Test
+    public void test_1_1_1(){
+
+        Triangle triangle = new Triangle(1,1,1);
+        // assert
+        Assert.assertTrue(triangle.isAvailable());
+    }
+
 }
