@@ -76,5 +76,46 @@ public class TriangleTest {
         Assert.assertFalse(triangle.isAvailable());
     }
 
+    @Test
+    public void test_3_5_3(){
+
+        Triangle triangle = new Triangle(3,5,3);
+        // assert
+        Assert.assertTrue(triangle.isAvailable());
+    }
+
+    @Test
+    public void test_2_5_3(){
+
+        Triangle triangle = new Triangle(2,5,3);
+        // assert
+        Assert.assertFalse(triangle.isAvailable());
+    }
+
+    @Test
+    public void test_3_5_1(){
+
+        Triangle triangle = new Triangle(3,5,1);
+        // assert
+        Assert.assertFalse(triangle.isAvailable());
+    }
+
+
+    @Test
+    public void test_3_5_f1(){
+
+        Triangle triangle = new Triangle(3,5,-1);
+        // assert
+        Assert.assertFalse(triangle.isAvailable());
+    }
+
+    @Test
+    public void test_3_0_f1(){
+
+        Triangle triangle = new Triangle(3,0,-1);
+        // assert
+        Assert.assertFalse(triangle.isAvailable());
+    }
+
 
 }

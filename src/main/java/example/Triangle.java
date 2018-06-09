@@ -13,12 +13,16 @@ public class Triangle {
 
     public boolean isAvailable() {
 
-        boolean result = true;
+        boolean result = false;
         if((Ea <= 0)||(Eb <= 0)||(Ec <= 0)) {
             return false;
         }
 
-        if((Ea == 1)||(Eb == 1)||(Ec == 1)){
+        if((Ea == Eb) && (Eb == Ec)){
+            return true;
+        }
+
+        if(((Ea+Eb)> Ec)&&((Ea+Ec)>Eb)&&((Eb+Ec)>Ea)){
             return true;
         }
 
