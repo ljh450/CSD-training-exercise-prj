@@ -68,5 +68,13 @@ public class TriangleTest {
         Assert.assertFalse(triangle.isAvailable());
     }
 
+    @Test
+    public void test_1_5_1(){
+
+        Triangle triangle = new Triangle(1,5,1);
+        // assert
+        Assert.assertFalse(triangle.isAvailable());
+    }
+
 
 }
