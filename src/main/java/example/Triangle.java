@@ -14,7 +14,7 @@ public class Triangle {
     public boolean isAvailable() {
 
         boolean result = true;
-        if((Ea == 0)||(Eb == 0)||(Ec == 0)) {
+        if((Ea <= 0)||(Eb <= 0)||(Ec <= 0)) {
             return false;
         }
 
